@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Điều Cần Biết</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+    <div class="bg-ambient left"></div>
+    <div class="bg-ambient right"></div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-top">
+            <div>
+                <h1 id="site-name"></h1>
+                <div class="header-badge" id="trust-label"></div>
+                <p class="header-desc" id="site-description"></p>
+            </div>
+        </div>
+    </header>
+
+    <!-- MENU -->
+    <nav class="menu" id="menu-container"></nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-left">
+            <span class="tag">THÔNG TIN NỔI BẬT</span>
+            <h2>Người dân cần cảnh giác với các hình thức giả mạo cơ quan chức năng</h2>
+            <p>
+                Các đối tượng đang sử dụng nhiều hình thức tinh vi nhằm đánh cắp
+                thông tin cá nhân và tài khoản ngân hàng qua điện thoại và mạng xã hội.
+            </p>
+            <button class="read-btn">Xem chi tiết</button>
+        </div>
+        <div class="hero-right"></div>
+    </section>
+
+    <!-- NEWS GRID — render động bởi renderer.js -->
+    <main class="news-grid" id="news-container"></main>
+
+    <!-- SCRIPTS: config trước, data sau, renderer & app cuối -->
+    <script src="/static/js/config.js"></script>
+    <script src="/static/js/data.js"></script>
+    <script src="/static/js/renderer.js"></script>
+    <script src="/static/js/app.js"></script>
+
+</body>
+</html>
